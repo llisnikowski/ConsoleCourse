@@ -48,3 +48,9 @@ install(TARGETS ConsoleCourseApp
 # make IDEs aware of the QML import path
 set(QML_IMPORT_PATH ${PROJECT_BINARY_DIR}/qml CACHE PATH
     "Path to the custom QML components defined by the project")
+
+
+enable_testing()
+add_subdirectory(
+    ${CMAKE_CURRENT_SOURCE_DIR}/utest
+)
