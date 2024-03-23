@@ -63,3 +63,9 @@ if (USE_ANY)
     add_definitions(-DHELLO)
 endif()
 
+add_custom_target(example COMMAND echo "EXAMPLE TARGET"
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+    USES_TERMINAL 
+    COMMENT "Example comment"
+)
+
