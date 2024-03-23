@@ -55,3 +55,11 @@ enable_testing()
 add_subdirectory(
     ${CMAKE_CURRENT_SOURCE_DIR}/utest
 )
+
+
+option(HELLO "Display only hello world and close the program" OFF)
+
+if (USE_ANY)
+    add_definitions(-DHELLO)
+endif()
+
